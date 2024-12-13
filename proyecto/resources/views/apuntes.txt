@@ -1,0 +1,23 @@
+Son:
+ 
+LARAVEL:
+-JsonController (Guarda todas las rutas para enviar al VUE)
+-Api.php
+El chiste es traer todos los datos que vas a mandar desde jsoncontroler  y el web.php hacia el grupos.vue
+El chiste es Laravel mande desde JsonController y Api.php los datos a VUE , vue los recibe con fetch(Pides datos al servidor) en Grupos.vue 
+y ahi manipulas los datos para generar el filtrado, ya según lo que haces creas un Grupo y según ese Grupo creas un GrupoHorario 
+y los mandas de nuevo a LARAVEL con una función dentro del script en Grupos.vue , y App.Vue simplemente es la vista , ahi mandas a llamar a Grupos.vue
+Y cada codigo esta dividido en 
+ 
+SCRIPT
+ 
+tEMPLATE
+ 
+STYLE 
+ 
+el script son las fucniones para enviar los datos a laravel con fetch 
+ 
+el template es codigo html donde haces los input y select
+ 
+el style no sirve mucho, es dar estilo con CSS
+Dile que es crear un grupoHorario con el grupo hecho y agregas datos del maestro, salon, periodo
